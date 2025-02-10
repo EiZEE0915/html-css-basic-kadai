@@ -1,64 +1,40 @@
-/* style.css */
-
-/* フォントの種類 */
-body {
-    font-family: 'Arial', 'Meiryo', sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
-    margin: 0;
-    padding: 20px;
-    text-align: center;
-    line-height: 1.6;
-}
-
-/* ルート要素のフォントサイズ */
-html {
+/* ルート要素のフォントサイズを20pxに設定 */
+:root {
     font-size: 20px;
 }
 
-/* h1の装飾 */
+  /* bodyのフォント設定 */
+body {
+    font-family: "Arial", "Meiryo", sans-serif;
+    text-align: center;
+}
+
+/* h1のフォント設定 */
 h1 {
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: "Josefin Sans", sans-serif;
     font-size: 2em;
     letter-spacing: 1.2em;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     border-bottom: 3px solid rgb(115, 115, 114);
 }
 
-h1 span.blue {
+/* Mをスカイブルー、Pをピンクに */
+.blue {
     color: skyblue;
 }
-h1 span.pink {
-    color: rgb(255, 192, 203);
-}
-
 .pink {
     color: rgb(255, 192, 203);
 }
 
+/* h2の見出し色設定 */
+.pink {
+    color: rgb(255, 192, 203);
+}
 .blue {
     color: skyblue;
 }
 
-/* #basic divの装飾 */
-#basic {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-}
-
-/* 子孫要素の装飾 */
+  /* #basic 内のp要素の太字設定 */
 #basic p {
     font-weight: bold;
-}
-
-p:not(#basic p) {
-    font-weight: normal;
-}
-
-/* その他のp要素 */
-p {
-    margin: 10px 0;
 }
